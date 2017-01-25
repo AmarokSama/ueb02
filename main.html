@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <title>Uebung2 JS</title>
+        <script src="js/js.js" type="application/javascript"></script>
+    </head>
+    <body>
+        <div class="top">
+            Einsatz: <input type="text"  name="stake" id="stake" value="0"/>
+            <input type="button" value="play" id="buttonPlay" onclick="startGame()"/>
+            Geldbeutel: <input type="label" name="beutel" id="beutel" value="500" disabled/>
+            Letzter Gewinn: <input type="text" name="gains" id="gains" value="" disabled/>
+            </br>
+            </br>
+            <input type="label" name="gewinn" id="gewinn" value="" disabled/>
+            </br>
+            </br>
+            <input class="restart" type="button" value="Restart" id="myButton" onclick="restart()" >
+        </div>
+        <div class="cards">
+            <input type="image" name="card" id="1C"/>
+            <input type="image" name="card" id="2C"/>
+            <input type="image" name="card" id="3C"/>
+        </div>
+        <script type="application/javascript">
+            main()
+        </script>
+    </body>
+</html>
