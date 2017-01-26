@@ -68,9 +68,10 @@ function startGame() {
             }else if(win == 1){
                 document.getElementById("beutel").value = myBeutel + myStake;
                 document.getElementById("gains").value = myStake;
-                document.getElementById("gewinn").value="Sie haben " + myStake + " euro gewonnen";
+                document.getElementById("gewinn").value= "Sie haben " + myStake + " euro gewonnen";
             }else{
                 document.getElementById("gains").value = 0;
+                document.getElementById("gewinn").value="";
             }
         }else{
             alert("not enought money");
@@ -105,7 +106,7 @@ function WinOrLoose(){
         return 0;
     }else if((carte[0] == "ik" || carte[0] == "uz") && (carte[1] == "ik" || carte[1] == "uz") && (carte[2] == "ik" || carte[2] == "uz")){
         return 1;
-    }else if((carte[0] == "rt" || carte[0] == "ro") && (carte[1] == "rt" || carte[1] == "ro") && (carte[2] == "rt" || carte[2] == "ro")){
+    }else if((carte[0] == "rz" || carte[0] == "ro") && (carte[1] == "rz" || carte[1] == "ro") && (carte[2] == "rz" || carte[2] == "ro")){
         return 1;
     }
     return -1;
